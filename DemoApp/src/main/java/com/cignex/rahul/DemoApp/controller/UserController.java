@@ -61,6 +61,13 @@ public class UserController {
 			return new ResponseEntity(new CustomError(DemoAppConstantValues.NO_USER_FOUND, HttpStatus.NO_CONTENT),
 					HttpStatus.OK);
 		}
+		
+		//for all user (hateoas)
+		// Resource<User> resource = new Resource<User>(user);
+		//ControllerLinkBuilder link = linkTo(methodOn(this.getClass()).getAllUsers());
+		//resource.add(link.withRel("Here is link for all users"));
+		// and return resource instead ResponseEntity
+		
 	}
 	
 	// Get user by email and password
@@ -114,3 +121,4 @@ public class UserController {
 				HttpStatus.NOT_FOUND);
 	}
 }
+
