@@ -14,8 +14,8 @@ public class ExceptionHandlerController implements ErrorController {
 	
 	  @RequestMapping
 	  public ResponseEntity<?> error() {
-	    System.out.println("PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP");
-	    return new ResponseEntity(new CustomError("sasasasasaasa"),HttpStatus.NOT_FOUND);
+	    System.out.println("Error from global HandlerClass");
+	    return new ResponseEntity(new CustomError("Something went wrong..."),HttpStatus.NOT_FOUND);
 	  }
 	
 	  
