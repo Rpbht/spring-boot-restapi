@@ -2,7 +2,7 @@
 
 In this DemoApp i've implememted how to create spring restapi using springboot
 
-## Explaination
+## Explanation
 
 In this App i created one basic shopping scenario, where user can register,login,see available products,and can add order and see the orders.
 
